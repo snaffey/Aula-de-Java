@@ -8,4 +8,20 @@ window.onload = function(){
     //Manipulação do valor de um objeto
     introP.innerHTML = "Alterado via API DOM";
     introP.style.color = "#ddff34"
+    //DOM CORE
+    introP.setAttribute("style","color:#FF0000");
+
+    var img = document.getElementsByTagName("img")[0]; //1ª imagem
+    //alert(img);
+
+    //DOM html
+    img.style.width="120px";
+    //DOM CORE
+    img.setAttribute("border","4px solid #ffdd00")
+
+    var imgs = document.images;
+    for ( var i=0; i < imgs.length; i++){
+        alert(imgs[i].alt);
+        alert(imgs[i].src);
+    }
 }
