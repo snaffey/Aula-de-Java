@@ -9,3 +9,11 @@ function gravarCookie(nome, value, days){
         document.cookie = nome + "=" + value + expires + "; path=/"
     }
 }
+function lerCookie(name){
+    var searchName = name + "=";
+    var cookies = document.cookie.split(';');
+    for(var i = 0; i < cookies.length; i++){
+        var c = cookies[i];//cookie atual
+        alert(c);
+    }
+}
