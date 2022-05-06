@@ -19,7 +19,29 @@ window.onload = function(){
     //Node.childNodes: Para aceder a todos os nos filhos
     //alert(h3.childNodes);
     var _umH3 = h3[0];
+    /*
     alert(_umH3);
     alert(_umH3.parentNode);
     alert(_umH3.childNodes);
+    */
+    // item -> aceder ao elemento n filho
+    var filhosh3 = _umH3.childNodes.item(0);
+    alert(filhosh3);
+
+    //Atributos dos nos
+    // nome do no -> nodeName
+    /*
+    1- Elemento
+    2- Atributo
+    3- Texto
+    */
+    /*
+    alert(filhosh3.nodeName);
+    alert(filhosh3.nodeType);
+    */
+    var div = document.getElementsByTagName("div").item(0);
+    //alert(div.childNodes.item(0));//Texto depois do div
+    //alert(div.childNodes.item(1));//Lista ul
+    var ul = div.childNodes.item(1);
+    alert(ul);
 }//windows.onload
