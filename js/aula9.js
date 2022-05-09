@@ -69,14 +69,35 @@ window.onload = function(){
     /* 
     ***************************manipulação e criação de nós***********************************
     */
-   var div= document.getElementsByTagName("div").item(0);
-   var h3New= document.createElement("h3")
-   h3New.appendChild(document.createTextNode("H3-via DOM CORE"));
-   div.appendChild(h3New)
+    var div= document.getElementsByTagName("div").item(0);
+    var h3New= document.createElement("h3")
+    h3New.appendChild(document.createTextNode("H3-via DOM CORE"));
+    div.appendChild(h3New)
 
-   var liNew= document.createElement("li")
-   liNew.appendChild(document.createTextNode("li-via DOM CORE"));
-   //div.appendChild(liNew);
-   div.firstElementChild.appendChild(liNew);
-   
+    var liNew= document.createElement("li")
+    liNew.appendChild(document.createTextNode("li-via DOM CORE"));
+    //div.appendChild(liNew);
+    div.firstElementChild.appendChild(liNew);
+    
+    //NOs do tipo atributo
+    var atrib = document.createAttribute("style");
+    atrib.value = "color:#ff10ff";
+    h3New.setAttributeNode(atrib);
+    //OU
+    //h3New.setAttribute("style","color:#00ff00")
+
+    var selecao = document.createElement("select");
+    selecao.setAttribute("id","estado_civil");
+
+    var opt = document.createElement("option");
+    opt.setAttribute("value","Solteiro");
+    opt.appendChild(document.createTextNode("Solteiro"));
+
+    var opt1 = document.createElement("option");
+    opt1.setAttribute("value","Casado");
+    opt1.appendChild(document.createTextNode("Casado"));
+
+    selecao.appendChild(opt);
+    selecao.appendChild(opt1);
+    div.appendChild(selecao);
 }//windows.onload
