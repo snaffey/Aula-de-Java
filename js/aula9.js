@@ -43,5 +43,40 @@ window.onload = function(){
     //alert(div.childNodes.item(0));//Texto depois do div
     //alert(div.childNodes.item(1));//Lista ul
     var ul = div.childNodes.item(1);
-    alert(ul);
+    /*alert(ul);
+    alert(ul.nodeName);
+    alert(ul.nodeType);
+    */
+    /*
+    Node.FirstChild-este é o mm que aceder ao primeiro item da 'ChildNodes'
+    Node.LastChild-este é o mm que aceder ao último item da 'ChildNodes'
+    */
+    /*alert(ul.childNodes.length);
+    alert(ul.childNodes.item(0));
+    alert(ul.firstChild);
+    alert(ul.lastChild);*/
+    /*for(var i=0; i<ul.childNodes.length;i++)
+        alert(ul.childNodes.item(i))*/
+    /*alert(ul.firstChild.nodeValue);
+    alert(ul.childNodes.item(1).nodeValue);//nao funciona pk ta a apontar para o <li>
+    alert(ul.childNodes.item(0).nodeValue);*/
+    //var ulli1= ul.childNodes.item(1);
+    //alert(ulli1.firstChild.nodeValue);
+    //var li= ul.childNodes.item(5);
+    //alert(li.firstChild.nodeValue);
+    //var liul= li.childNodes.item(1).childNodes[1];
+    //alert(liul.firstChild.nodeValue);
+    /* 
+    ***************************manipulação e criação de nós***********************************
+    */
+   var div= document.getElementsByTagName("div").item(0);
+   var h3New= document.createElement("h3")
+   h3New.appendChild(document.createTextNode("H3-via DOM CORE"));
+   div.appendChild(h3New)
+
+   var liNew= document.createElement("li")
+   liNew.appendChild(document.createTextNode("li-via DOM CORE"));
+   //div.appendChild(liNew);
+   div.firstElementChild.appendChild(liNew);
+   
 }//windows.onload
