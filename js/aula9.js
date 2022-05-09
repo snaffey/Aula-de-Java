@@ -100,4 +100,17 @@ window.onload = function(){
     selecao.appendChild(opt);
     selecao.appendChild(opt1);
     div.appendChild(selecao);
+
+    //--------------------------------------------------------------------------------------------
+    //Remover elementos
+    
+    var elem = div.childNodes[1];
+    div.removeChild(elem);
+
+    var eliminar = div.childNodes[2];//h3
+    div.removeChild(eliminar);
+
+    var h3document = document.getElementsByTagName("h3").item(0);
+    document.body.removeChild(h3document);
+
 }//windows.onload
