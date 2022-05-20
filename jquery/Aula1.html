@@ -2,9 +2,63 @@
 <html>
 	<head>
 		<title>JQUERY 1</title>
-		<script type="text/javascript" src="/jquery/js/jquery.js">
+		<script type="text/javascript" src="js/jquery.js">
 		</script>
+        <script type="text/javascript">
+        /*
+        EXEMPLO JS PURO
+
+        window.onload=function(){
+            document.getElementById("nome").onclick = mudarCor;
+            function mudarCor(){
+                document.getElementById("nome").style.color = "#ff00ff"
+            }
+        }
+        */
+        $(document).ready(function(){
+            /*
+            $("p").click(function(){
+                $("#nome").css("color","#ff0000");
+            });
+            */
+            
+            //Selecionar um elemento, com identificador,e alteração de conteudo
+            //$("nome").css("color","ff0000");
+            
+            // text() -> alteração de conteudo
+            //$("nome").text("Alterado via JQ");
+            
+            /*
+            $("p").click(function(){
+                $("#nome").css("color","#ff0000"); //maneira antiga
+            });
+
+            $("p").click(function(){
+                $(this).css("color","#ff0000"); //maneira correta
+            });
+            */
+
+            //elem aninhados
+            $("p").css("color","#0000ff").click(function(){
+                $(this).css("color","#ff0000").text("Alterado via JQ");
+            });
+        });
+        </script>
 	<head>
 	<body>
+        <p id="nome">Tiago Santos</p>
+        <p>Tiago Manel</p>
+        <p>Tiago Nóbrega</p>
+        <p>Tiago Jose</p>
 	</body>
 </html>
+<!--
+    
+    carregamento em JS puro
+    window.onload=function(){}
+    -----------------
+    Setores css em jQ
+    sintaxe -> $()
+    $(document).ready(function(){})
+
+-->
