@@ -14,6 +14,8 @@ $(document).ready(function(){
     $(":button").click(function(){
         //$(":text").css("background","#cd00cd");
         //$(":password").css("background","#cd00cd");
-        $(":radio").parent().css("background","#cd00cd")
+        //$(":checkbox").parent().css("background","#cd00cd");
+        //Filtar elemento do tipo input em que o atributo permite receber valores
+        $(":disabled").css("background","#cd00cd")
     }).css("border","2px solid #ff00cd",);
 });
