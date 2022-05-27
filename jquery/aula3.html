@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Aula 3 jquery</title>
+		<script type="text/javascript" src="js/jquery.js">
+		</script>
+        <script type="text/javascript" src="js/aula3.js">
+        </script>
+	<head>
+	<body>
+        <form action="#" method="get">
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                    <label for="email"> Email: </label>
+                    <input type="text" id="email" readonly="readonly" value="email" /> <br /> 
+                    Senha:<input type="password" id="senha" /><br />
+                    <label for="sexo">
+                    Sexo:</label>
+                     M<input type="radio" name="sexo" value="M" tabindex="2"  />
+                     F<input type="radio" name="sexo" value="F" checked="checked" tabindex="3" /><br />
+            <label for="casa">
+                A tua casa tem:</label><br />
+                    <input type="checkbox" name="casa" value="quarto" /> Tem quarto <br />
+                    <input type="checkbox" name="casa" value="sala" /> Tem sala
+                    <br />
+                    Selecione foto:
+                    <input type="file" id="foto" /><br />
+                    Indique numero de irmÃ£o:
+                    <select id="irmaos">
+                        <option>0</option>
+                        <option selected="selected">1</option>
+                        <option>2</option>
+                        <option>3</option>
+                    </select>
+                    <br />
+                    Solteiro ou Casado:<br />
+                    <select id="solcas">
+                        <optgroup label="Solteiro">
+                            <option>Solteiro sem filhos</option>
+                            <option>Solteiro 1 filhos</option>
+                            <option>Solteiro 2 filhos</option>
+                        </optgroup>
+                        <optgroup label="Casado">
+                            <option>Casado sem filhos</option>
+                            <option disabled="disabled">Casado 1 filhos</option>
+                            <option selected="selected">Casado 2 filhos</option>
+                        </optgroup>
+                    </select><br />
+                    Comentario:<br />
+                    <textarea cols="60" rows="10" tabindex="1" >Escreva um comentario</textarea>
+                    
+                    <input type="hidden" id="info_vital" value="secreto"/>
+                    
+                    <input type="reset" value="limpa dados" />
+                    <input type="submit" value="Enviar dados" />
+                    <input type="button" value="Botao" />
+                </fieldset>
+            </form>
+	</body>
+</html>
