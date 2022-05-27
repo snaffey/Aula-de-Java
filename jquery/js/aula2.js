@@ -64,4 +64,43 @@ $(document).ready(function(){
 
 	//Seletores de conteudo - pesquisar elementos pelo ser conteudo - pesquisar elementos pelo ser conteudo(contains)
 	//$("p:contains(p1)").css("background","cd00cd");
+
+	// Alterar o core para sensitive
+	/*
+	jQuery.expr[':'].contains = function(a,i,m) {
+		return jQuery(a).text().toUpperCase().idexOf(m[3].toUpperCase()) >= 0;
+	};
+	$("p:contains(P1)").css("background","#cd00cd");*/
+	//empty -> Filtra elementos que nao contenham texto(vazias), muito usado em tabelas.
+	//$("p:empty").css("background","#cd00cd")
+	
+	//Todos os que nao estas vazios
+	//$("p:not(p:empty)").css("background","#cd00cd");
+
+	//Filtrar todos os elementos que contenham outros elementos
+	//$("p:has(span)").css("background","#cd00cd");
+
+	//Filtar pelos atributos
+	//$("a[id]").css("background","#cd00cd");
+
+	//id com um determinado valor
+	//$("a[id=escola]").css("background","#cd00cd");
+	//contem
+	//$("a[id*=m]").css("background","#cd00cd");
+
+	//Aplicar ao elemento que o valor do atributo termine
+	//$("a[href$=pt]").css("background","#cd00cd");
+
+	//Aplicar ao elemento que o valor atributo iniciar
+	//$("a[href^=http]").css("background","#cd00cd");
+	//Diferente
+	//$("a[id!=email]").css("background","#cd00cd");
+
+
+
+
+
+
+
+
 });
