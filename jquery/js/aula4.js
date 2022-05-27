@@ -8,6 +8,33 @@ $(document).ready(function(){
     $("#disJQ").click(function(){
         /*var idP = $("p").attr("id");
         alert(idP);*/
-        $("p").attr("id","pSergio").attr("class","borda")
+        //$("p").attr("id","pSergio").attr("class","borda");
+        //$("img").attr("src","../imagem/2.png").attr("title","foto2");
+
+        //Atraves do array associativo
+        /*$("img").attr({
+            src:"../imagem/2.png",
+            title:"foto2"
+        })*/
+        //mudar();
     }).css("border","2px solid #ff00cd")
+    /*function mudar(){
+        $("img").attr({
+            src:"../imagem/2.png",
+            title:"foto2"
+        })*/
+    $("img").removeAttr("title").removeAttr("alt")
+
+    var cont = 1;
+    function mudar(){
+        var str = "../imagens/";
+            str += cont + ".png"
+        $("img").attr({
+            src:str,
+            title:"foto2"
+        });
+        cont++
+        if(cont == 4)
+            cont=1;
+    }
 });
