@@ -61,4 +61,7 @@ $(document).ready(function(){
 
 	//Filtrar ocorrencia um indice menor que(inicia em 0)-lt
 	//$("p span:lt(2)").css("background","cd00cd");
+
+	//Seletores de conteudo - pesquisar elementos pelo ser conteudo - pesquisar elementos pelo ser conteudo(contains)
+	//$("p:contains(p1)").css("background","cd00cd");
 });
