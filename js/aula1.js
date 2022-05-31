@@ -8,7 +8,7 @@ document.write(num);
 /*
 OPERADORES
 relação dos operadores
-+;-;*;/;%
++ ; - ; * ; / ; %
 
 Operadores de incrementar e decrementar
 variavel++ ou ++variavel

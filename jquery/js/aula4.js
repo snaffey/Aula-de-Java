@@ -18,6 +18,13 @@ $(document).ready(function(){
         })*/
         //mudar();
     }).css("border","2px solid #ff00cd")
+
+    /*
+    Manipulação do conteudo do elemento 
+    Método .html() - retorna o conteudo html do elemento
+    */
+    alert($("p").html());
+
     /*function mudar(){
         $("img").attr({
             src:"../imagem/2.png",

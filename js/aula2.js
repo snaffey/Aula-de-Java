@@ -40,24 +40,23 @@ else
 
 // CONSTANTES
 
-/*
+
 const SEMANA = 7;
 document.write(SEMANA);
 console.log(SEMANA);
 var idade = prompt ("Idade?","Insira aqui a idade.");
 if (idade <= 10)
-		document.write(" <=10 ");
+	document.write(" <=10 ");
 else if(idade <=20)
 	document.write(" 11->20 ");
 else if(idade <=30)
 	document.write(" 21->30");
 else 
 	document.write(" >31 ");
-*/
 
 //switch
 
-/*
+
 var num = 1;
 switch(num){
 	case 1:
@@ -72,16 +71,13 @@ switch(num){
 	default:
 		alert("Outro!");
 }
-*/
+
 
 // Estrutura de repetição
 
-/*
-for(var i=0; i<10;i++)
+for(var i=0 ; i<10 ;i++)
 	alert(i);
-*/
 
-/*
 var par = "Par";
 var impar = "Ímpar:";
 for(var i = 0; i<=40 ; i++){
@@ -92,7 +88,7 @@ for(var i = 0; i<=40 ; i++){
 }
 document.write(par + "<br />");
 document.write(impar);
-*/
+
 
 /*	Repetição em ciclo de objetos for in (repetição em objetos)
 	Instrução: 
