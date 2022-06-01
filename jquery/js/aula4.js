@@ -83,6 +83,12 @@ $(document).ready(function(){
         span.wrap(p);
 
         $("ul").append($("li").clone());
+
+        //Remoção
+        $("h2").remove("#cab1");
+        $("p").empty();
+        $("img").unwrap();
+
     }).css("border","2px solid #ff00cd")
 
     /*
