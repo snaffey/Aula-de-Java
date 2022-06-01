@@ -37,6 +37,7 @@ $(document).ready(function(){
         var imgNew = $("<img >",{src: "../imagem/1.png", style: "width:120px" })
         $("body").append(imgNew)*/
 
+        /*
         var newBr = $("<br />");
         var imgNew = $("<img />", {
             src:"../imagem/2.png",
@@ -47,6 +48,41 @@ $(document).ready(function(){
             }
         });
         $("body").append(newBr).append(imgNew);
+        */
+        var listaNaoOrdenada = $("<ul/>").append($("<li/>")).append($("Dados inseridos pelo JQ"));
+        //listaNaoOrdenada.append($("<li/>"))
+
+        /*
+        Tipos de inserção:
+        append() - Insere na ultima pos do elemento invocador
+        prepend() - Insere no inicio pos do elemento invocador
+        after() - Insere apos o elemento
+        before() - Insere antes do elemento
+        wrap() - Envolve o elemento
+        clone() - Duplica o elemento
+        ---------------
+        Tipos de eliminação na arvore
+        remove - remove um determinado elemento
+        empty - limpa um determinado elemento
+        unwrap - remove o elemento que o envolve
+        */
+
+        var listaNaoOrdenada = $("<ul/>");
+        var dado1LNO = $("<li/>").append("Dado inserido pelo Jquery 1");
+
+        var dado2LNO = $("<li/>").append("Dado inserido pelo Jquery 2");
+        var span = $("<span>");
+        listaNaoOrdenada.append(dado1LNO).append(dado2LNO).append(span);
+        $("body").append(listaNaoOrdenada).append(span)
+        listaNaoOrdenada.append("<li>Dentro Ul, mas no fim<li/>");
+        listaNaoOrdenada.prepend("<li>Dentro Ul, mas no inicio<li/>");
+        listaNaoOrdenada.before("<p>Antes da UL<p/>")
+        listaNaoOrdenada.after("<p>Depois da UL<p/>")
+
+        var p = $("<p/>");
+        span.wrap(p);
+
+        $("ul").append($("li").clone());
     }).css("border","2px solid #ff00cd")
 
     /*
