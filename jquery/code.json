@@ -1,0 +1,36 @@
+{
+    "cd":[
+        {
+        "title":"Empire Burlesque",
+        "artist":"Bob Dylan",
+        "country":"USA",
+        "company":"Columbia",
+        "price":"10.90",
+        "year":"1985"
+        },
+        {
+        "title":"Hide your heart",
+        "artist":"Bonnie Tyler",
+        "country":"UK",
+        "company":"CBS Record",
+        "price":"9.90",
+        "year":"1988"
+        },
+        {
+        "title":"Maggie May",
+        "artist":"Rod Stewart",
+        "country":"UK",
+        "company":"Pickwick",
+        "price":"8.50",
+        "year":"1990"
+        },
+        {
+        "title":"Private Dancer",
+        "artist":"Tina Turner",
+        "country":"UK",
+        "company":"Capitol",
+        "price":"8.90",
+        "year":"1999"
+        }
+    ]
+}

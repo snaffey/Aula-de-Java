@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<curso>
+    <formacao>
+        <formando>Manel Couveiro</formando>
+        <formando>Manel Simpatico</formando>
+        <formando>Manel Gamer</formando>
+        <formando>Pedro Pires</formando>
+        <formando>Luis Lopes</formando>
+    </formacao>
+    <formacao>
+        <formando>Versappen Couveiro</formando>
+        <formando>Versappen Simpatico</formando>
+        <formando>Versappen Gamer</formando>
+        <formando>Versappen Pires</formando>
+        <formando>Versappen Lopes</formando>
+    </formacao>
+</curso>
