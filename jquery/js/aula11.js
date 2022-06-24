@@ -23,7 +23,7 @@ $(function () {
     });
 });
 */
-
+/*
 $(function () {
     $("#ajax").click(function(){
         $.ajax({
@@ -39,6 +39,31 @@ $(function () {
                 }
                 output += "</tbody></table>"
                 $("body").html(output);
+                $.each(json["cd"],function(index,element){
+                    $('body').append($('<div>',{text: element.title+" : "+element.year}));
+                    console.log(index);
+                });
+            }
+        });
+        return false;
+    });
+});
+*/
+
+$(function () {
+    $("#ajax").click(function(){
+        $.ajax({
+            type: "GET",
+            url: "./file.xml",
+            dataType:"xml",
+            success: function(json){
+                $(xml).find('formacao').each(function(){
+                    $(this).find('formando').each(function(){
+                        var name = $(this).text();
+                        document.write(name);
+                    });
+                    document.write('<br />')
+                });
             }
         });
         return false;
